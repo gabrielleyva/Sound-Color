@@ -1,0 +1,14 @@
+PODS:
+  - Beethoven (1.0.0):
+    - Pitchy
+  - Pitchy (1.0.0)
+
+DEPENDENCIES:
+  - Beethoven (~> 1.0)
+  - Pitchy (~> 1.0)
+
+SPEC CHECKSUMS:
+  Beethoven: 33b9add13299ea95e84bce44900055ac3c232fe0
+  Pitchy: 4e8302612409d07a27c5083f0bbc2a4bd376f1cc
+
+COCOAPODS: 0.39.0

@@ -1,0 +1,6 @@
+framework module Pods_Sound_Color {
+  umbrella header "Pods-Sound Color-umbrella.h"
+
+  export *
+  module * { export * }
+}

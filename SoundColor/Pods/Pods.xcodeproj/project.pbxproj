@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01E5B687E198E69CF0A3CF6D80837046 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559589A619359C032EBADBA5032FA338 /* Foundation.framework */; };
+		0D0F309DC3A69EE1B12FC3327839C85C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2538EAB7F13110AFB08DEFEBE9BBDCE /* Config.swift */; };
+		0DF682557E4E56CF2E6204A510B39EAA /* Pitchy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CE40D3CA713D3372504837FE0FCD22 /* Pitchy.framework */; };
+		197E8602976643CB9329010568986AFC /* PitchCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894AAE2A4F1376E9684C3D3CECE0F14 /* PitchCalculator.swift */; };
+		1ACCAD57CE934B6110C14CF4A53F7745 /* NoteCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73BB52208198068441920B7021950A6 /* NoteCalculator.swift */; };
+		2E4FE147AE34E3F2155B66A91E389FDF /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35056A15A465E7FBAA6277A8BC92D0C1 /* Array+Extensions.swift */; };
+		2FC2B94F8965DB44B4F1A2552BC70511 /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A51C2DBB70457F1246A84DDCC31BEF /* Buffer.swift */; };
+		37D7598C4598060384560906F1A0B6C7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD82A0D4B3677BB6A723ED2169E80A1 /* Note.swift */; };
+		3BB2534DCF13A506F1BEA2FFB530BA65 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E661459D4C36311DD8C6CD2125F9D /* Error.swift */; };
+		3E2E09E45D3E8C651AE4C6F6B4418D16 /* Pitchy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 852AD3D95C5D323D6D59A972564F3894 /* Pitchy-dummy.m */; };
+		3EA3D6FE284197163A75940BB41BB1BC /* TransformStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48076E31A7F3C721E2B5464103411DE /* TransformStrategy.swift */; };
+		3F6A29B571A4D5FB8792CBCF4C92BD56 /* OutputSignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0745FCE5AD61677D5A21CFB12C043B /* OutputSignalTracker.swift */; };
+		43573F03D53511D1412B71AFF07AC07A /* HPSEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1042CD66EF37F18A7980513FB011B84 /* HPSEstimator.swift */; };
+		4534DB58B44B2A5B0A877395EECDE26A /* WaveCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B21C401991C70F0C6ECB5FA281E412 /* WaveCalculator.swift */; };
+		553DCDAA9B39F17C00B376C62EBD6272 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559589A619359C032EBADBA5032FA338 /* Foundation.framework */; };
+		559DFCBE5D8C7A43125930F08E125094 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FDAF5FDFC14AC91EAC9C53DC39A577 /* Transformer.swift */; };
+		56BE2E91871CB441CADCB53B2C77B398 /* Beethoven-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CAB5727CEB72BBF6BE88EF42B9A85A /* Beethoven-dummy.m */; };
+		6378051D71EA27AF7724DC783FAD0702 /* QuinnsFirstEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7448B1E64C3E58E939B3BEC9F164A1E /* QuinnsFirstEstimator.swift */; };
+		63997D8F0F4649CB330965E3AC466DDC /* SignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B581793E1EBE897416925A7955162 /* SignalTracker.swift */; };
+		6A668233DB84899211B77F2D690C27F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559589A619359C032EBADBA5032FA338 /* Foundation.framework */; };
+		6C0A8E721107BEB86C3F40EE27A86245 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6312E968E9AFEDB711A2A3A74F69878 /* Config.swift */; };
+		6F49484E7A394DBFCA5AF2C6ABFB3D91 /* QuadradicEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BBF24DF37594A6775E939945B5E297 /* QuadradicEstimator.swift */; };
+		6F90BD17C9A552F3579230348DC130E0 /* EstimationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0EB4F4E3B0C7DC19B6F7642574F13 /* EstimationError.swift */; };
+		70B92815323E77F69937824CA239B6AB /* EstimationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F1CC693AA9A6A2454178C56838929 /* EstimationStrategy.swift */; };
+		745345412C681E05E90F89BAB69B568F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297367E0A22A797D8C50D41A323AA6B9 /* AVFoundation.framework */; };
+		7B2496FC2CAC29495D0A09946EFD16CE /* AcousticWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EA2CA6A787C8E84147A905099BBBF1 /* AcousticWave.swift */; };
+		7CD913E68D464F91CF9594ECFE49F771 /* Pitchy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AA5C5D708D654B04CE7F6DB5DF0F093 /* Pitchy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83CA2BE74436FC56FE8B7F1877AC274E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFA7E10F092007F8F0EFC6DC5FDB94C /* Accelerate.framework */; };
+		87733F6D52670C38228787EADD29F84F /* Pods-Sound Color-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA73D3E472CBA83EF5BD00CFB9074A0E /* Pods-Sound Color-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D410872C0A2200E60497AB8395F59C7 /* Estimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C9EE1085722E772CC0DDD47BA37E38 /* Estimator.swift */; };
+		8F2A7C3469E600FFBC6056F79B322EC1 /* InputSignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1198072DE45BD64C89FF7CE2193A8 /* InputSignalTracker.swift */; };
+		9D818CC379B5B18946157208A0A499AF /* LocationEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50BA7703809A422A6CABEB0F6095B0 /* LocationEstimator.swift */; };
+		A02FA725368B9F5067246B16D22B805F /* EstimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F44FB4C449B39FF4753F6F96F7ABA0 /* EstimationFactory.swift */; };
+		A86AADDD78E4FB9A5C003F9DBD66B98E /* PitchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861C4EC0C4BD2EC5A7940E9AC9734BB4 /* PitchEngine.swift */; };
+		C210855722BA44E4FDE24BAC79A7B44C /* FFTTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5062865D2181EBD99D6A3EC3E0E6A /* FFTTransformer.swift */; };
+		C2EC4B13DC0F85298B2B85AE871DBD35 /* BarycentricEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC2CB3AD92D6304437A7ABEC96C5EB5 /* BarycentricEstimator.swift */; };
+		CDB5976F897591D6C6A8E18747ABB9FC /* TransformFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8AED558025529927C5F6EE3B75958 /* TransformFactory.swift */; };
+		CF6EC2DD2E16B730DDF73C88506952CA /* Beethoven-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F2A3CD6AF88725DCAB47EE30B1E530F /* Beethoven-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7498158B940FA0C972641DAAF82471E /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9E46D3E17E6B80F5DB43DD90BDB34 /* Pitch.swift */; };
+		E0EC0F24E4046AF07A0C7DE26AFA149F /* Pods-Sound Color-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E1B29CCAD43721EE3B376201DCC379 /* Pods-Sound Color-dummy.m */; };
+		F62CE5BE0F614AA64FAF792D6DDF282D /* JainsEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0343EB9C4F11A8AB1D93FCE228EB507E /* JainsEstimator.swift */; };
+		FC9EDC8175C71637AAE282A0B66A6E11 /* QuinnsSecondEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647CF565BEAB95C8248157FF2863DB27 /* QuinnsSecondEstimator.swift */; };
+		FE1278517CF18A25FDD8488772A6FDA5 /* SimpleTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F8043C8FBABFC63C11E1A91203EE1 /* SimpleTransformer.swift */; };
+		FF313B4F21C8A80D417A41F5850D346B /* MaxValueEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F1FBA176980DCF3BDC68FFDEAD92CC /* MaxValueEstimator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6017C46D344F982C1CE0038EB73CA894 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D547ECBAFD0BAC79D81AE36137B80925;
+			remoteInfo = Pitchy;
+		};
+		639A3800AA2DC3A9C6313B78755B6274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D547ECBAFD0BAC79D81AE36137B80925;
+			remoteInfo = Pitchy;
+		};
+		C897DF20285FF2743B46EB5DF5600A9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F2148881B422F7499162ACACC37D143;
+			remoteInfo = Beethoven;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0343EB9C4F11A8AB1D93FCE228EB507E /* JainsEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JainsEstimator.swift; path = Source/Estimation/Strategies/JainsEstimator.swift; sourceTree = "<group>"; };
+		0377D46E16281914436B68357FC5B9C3 /* Beethoven.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Beethoven.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08DD35F671F08C64F756AA27BF5926A8 /* Pods-Sound Color-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sound Color-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1894AAE2A4F1376E9684C3D3CECE0F14 /* PitchCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PitchCalculator.swift; path = Source/Calculators/PitchCalculator.swift; sourceTree = "<group>"; };
+		2247DF63092D3C2D12A6EFA4B8DBBFDE /* Pods-Sound Color.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Sound Color.modulemap"; sourceTree = "<group>"; };
+		297367E0A22A797D8C50D41A323AA6B9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		2C1BB63BBC6C0EAC17DFE7CA88FB8752 /* Pods-Sound Color.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sound Color.debug.xcconfig"; sourceTree = "<group>"; };
+		30F44FB4C449B39FF4753F6F96F7ABA0 /* EstimationFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EstimationFactory.swift; path = Source/Estimation/EstimationFactory.swift; sourceTree = "<group>"; };
+		35056A15A465E7FBAA6277A8BC92D0C1 /* Array+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extensions.swift"; path = "Source/Extensions/Array+Extensions.swift"; sourceTree = "<group>"; };
+		3A5E2949914210419BEEAE8A8F78FFA1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CE5062865D2181EBD99D6A3EC3E0E6A /* FFTTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FFTTransformer.swift; path = Source/Transform/Strategies/FFTTransformer.swift; sourceTree = "<group>"; };
+		3E8B581793E1EBE897416925A7955162 /* SignalTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignalTracker.swift; path = Source/SignalTracking/SignalTracker.swift; sourceTree = "<group>"; };
+		3F2A3CD6AF88725DCAB47EE30B1E530F /* Beethoven-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Beethoven-umbrella.h"; sourceTree = "<group>"; };
+		43CAB5727CEB72BBF6BE88EF42B9A85A /* Beethoven-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Beethoven-dummy.m"; sourceTree = "<group>"; };
+		473692F6B1A6F7920405114D4F9018E3 /* Pods-Sound Color-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sound Color-resources.sh"; sourceTree = "<group>"; };
+		4BE9E46D3E17E6B80F5DB43DD90BDB34 /* Pitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pitch.swift; path = Source/Data/Pitch.swift; sourceTree = "<group>"; };
+		559589A619359C032EBADBA5032FA338 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5C1401923073470A016E6A9264096D79 /* Pods-Sound Color-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sound Color-frameworks.sh"; sourceTree = "<group>"; };
+		5EDFCD9E8A12E73690EC326F4A639546 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		626F8043C8FBABFC63C11E1A91203EE1 /* SimpleTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleTransformer.swift; path = Source/Transform/Strategies/SimpleTransformer.swift; sourceTree = "<group>"; };
+		62CF44113C095B726281F88C306614D5 /* Beethoven.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Beethoven.xcconfig; sourceTree = "<group>"; };
+		647CF565BEAB95C8248157FF2863DB27 /* QuinnsSecondEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuinnsSecondEstimator.swift; path = Source/Estimation/Strategies/QuinnsSecondEstimator.swift; sourceTree = "<group>"; };
+		6DD82A0D4B3677BB6A723ED2169E80A1 /* Note.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Note.swift; path = Source/Data/Note.swift; sourceTree = "<group>"; };
+		74FBC53B691E9AF4E451A3383BDA72B3 /* Pods-Sound Color.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sound Color.release.xcconfig"; sourceTree = "<group>"; };
+		769510C929EF83FAD2682054D7F1C44D /* Beethoven.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Beethoven.modulemap; sourceTree = "<group>"; };
+		7B50BA7703809A422A6CABEB0F6095B0 /* LocationEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationEstimator.swift; path = Source/Estimation/LocationEstimator.swift; sourceTree = "<group>"; };
+		7BA3B6D8AECE295CBE052C4846FCE135 /* Pitchy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pitchy-prefix.pch"; sourceTree = "<group>"; };
+		852AD3D95C5D323D6D59A972564F3894 /* Pitchy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pitchy-dummy.m"; sourceTree = "<group>"; };
+		861C4EC0C4BD2EC5A7940E9AC9734BB4 /* PitchEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PitchEngine.swift; path = Source/PitchEngine.swift; sourceTree = "<group>"; };
+		916B9EFACBAB02EDFF991104DFAB9D98 /* Pitchy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pitchy.xcconfig; sourceTree = "<group>"; };
+		93C9EE1085722E772CC0DDD47BA37E38 /* Estimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Estimator.swift; path = Source/Estimation/Estimator.swift; sourceTree = "<group>"; };
+		9AA5C5D708D654B04CE7F6DB5DF0F093 /* Pitchy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pitchy-umbrella.h"; sourceTree = "<group>"; };
+		A2EA2CA6A787C8E84147A905099BBBF1 /* AcousticWave.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcousticWave.swift; path = Source/Data/AcousticWave.swift; sourceTree = "<group>"; };
+		A374CF6519AC6EBBCC0B282376B3C197 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5DFA632FFADA9F77EE8226604F00DF6 /* Pitchy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pitchy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7448B1E64C3E58E939B3BEC9F164A1E /* QuinnsFirstEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuinnsFirstEstimator.swift; path = Source/Estimation/Strategies/QuinnsFirstEstimator.swift; sourceTree = "<group>"; };
+		A9F1FBA176980DCF3BDC68FFDEAD92CC /* MaxValueEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaxValueEstimator.swift; path = Source/Estimation/Strategies/MaxValueEstimator.swift; sourceTree = "<group>"; };
+		AC1A5FB8A8A7AAB376508A50ADC2B48C /* Pods_Sound_Color.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sound_Color.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7A51C2DBB70457F1246A84DDCC31BEF /* Buffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Buffer.swift; path = Source/Data/Buffer.swift; sourceTree = "<group>"; };
+		B9B21C401991C70F0C6ECB5FA281E412 /* WaveCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WaveCalculator.swift; path = Source/Calculators/WaveCalculator.swift; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BDFA7E10F092007F8F0EFC6DC5FDB94C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		C03324401CC582CF001CCEF1 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = MyParticle.sks; path = "../Sound Color/MyParticle.sks"; sourceTree = "<group>"; };
+		C03324411CC582CF001CCEF1 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spark.png; path = "../Sound Color/spark.png"; sourceTree = "<group>"; };
+		C6BBF24DF37594A6775E939945B5E297 /* QuadradicEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuadradicEstimator.swift; path = Source/Estimation/Strategies/QuadradicEstimator.swift; sourceTree = "<group>"; };
+		C73BB52208198068441920B7021950A6 /* NoteCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoteCalculator.swift; path = Source/Calculators/NoteCalculator.swift; sourceTree = "<group>"; };
+		CAC2CB3AD92D6304437A7ABEC96C5EB5 /* BarycentricEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarycentricEstimator.swift; path = Source/Estimation/Strategies/BarycentricEstimator.swift; sourceTree = "<group>"; };
+		CF0745FCE5AD61677D5A21CFB12C043B /* OutputSignalTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OutputSignalTracker.swift; path = Source/SignalTracking/Units/OutputSignalTracker.swift; sourceTree = "<group>"; };
+		D1042CD66EF37F18A7980513FB011B84 /* HPSEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HPSEstimator.swift; path = Source/Estimation/Strategies/HPSEstimator.swift; sourceTree = "<group>"; };
+		D1FDAF5FDFC14AC91EAC9C53DC39A577 /* Transformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transformer.swift; path = Source/Transform/Transformer.swift; sourceTree = "<group>"; };
+		D3CE40D3CA713D3372504837FE0FCD22 /* Pitchy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pitchy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48076E31A7F3C721E2B5464103411DE /* TransformStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformStrategy.swift; path = Source/Transform/TransformStrategy.swift; sourceTree = "<group>"; };
+		D5C0EB4F4E3B0C7DC19B6F7642574F13 /* EstimationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EstimationError.swift; path = Source/Estimation/EstimationError.swift; sourceTree = "<group>"; };
+		D83530F5B6979010261E361F06ACA5F7 /* Pitchy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pitchy.modulemap; sourceTree = "<group>"; };
+		D8E1B29CCAD43721EE3B376201DCC379 /* Pods-Sound Color-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sound Color-dummy.m"; sourceTree = "<group>"; };
+		DA73D3E472CBA83EF5BD00CFB9074A0E /* Pods-Sound Color-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sound Color-umbrella.h"; sourceTree = "<group>"; };
+		DCA8AED558025529927C5F6EE3B75958 /* TransformFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformFactory.swift; path = Source/Transform/TransformFactory.swift; sourceTree = "<group>"; };
+		DFF1198072DE45BD64C89FF7CE2193A8 /* InputSignalTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputSignalTracker.swift; path = Source/SignalTracking/Units/InputSignalTracker.swift; sourceTree = "<group>"; };
+		E2538EAB7F13110AFB08DEFEBE9BBDCE /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Source/Config.swift; sourceTree = "<group>"; };
+		E6312E968E9AFEDB711A2A3A74F69878 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Source/Config.swift; sourceTree = "<group>"; };
+		EF2E661459D4C36311DD8C6CD2125F9D /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		F16D544274370D73CA52D6CC3FABF660 /* Beethoven-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Beethoven-prefix.pch"; sourceTree = "<group>"; };
+		F57F1CC693AA9A6A2454178C56838929 /* EstimationStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EstimationStrategy.swift; path = Source/Estimation/EstimationStrategy.swift; sourceTree = "<group>"; };
+		F6C64F076FF9ABC0A7C1CFA554842A31 /* Pods-Sound Color-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sound Color-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		015AA290B2E32CABC9657DEC62E3A1C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CA2BE74436FC56FE8B7F1877AC274E /* Accelerate.framework in Frameworks */,
+				745345412C681E05E90F89BAB69B568F /* AVFoundation.framework in Frameworks */,
+				553DCDAA9B39F17C00B376C62EBD6272 /* Foundation.framework in Frameworks */,
+				0DF682557E4E56CF2E6204A510B39EAA /* Pitchy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2909C5E6BBA00361A9DC429C42C68E54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E5B687E198E69CF0A3CF6D80837046 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420D3173CAD616472813AC9AFC93EBAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A668233DB84899211B77F2D690C27F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04ED734F45D8D8DE9DF2C9260B426A02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0377D46E16281914436B68357FC5B9C3 /* Beethoven.framework */,
+				A5DFA632FFADA9F77EE8226604F00DF6 /* Pitchy.framework */,
+				AC1A5FB8A8A7AAB376508A50ADC2B48C /* Pods_Sound_Color.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30213C47D4FE0D2B01EE418C3DB83F3A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				769510C929EF83FAD2682054D7F1C44D /* Beethoven.modulemap */,
+				62CF44113C095B726281F88C306614D5 /* Beethoven.xcconfig */,
+				43CAB5727CEB72BBF6BE88EF42B9A85A /* Beethoven-dummy.m */,
+				F16D544274370D73CA52D6CC3FABF660 /* Beethoven-prefix.pch */,
+				3F2A3CD6AF88725DCAB47EE30B1E530F /* Beethoven-umbrella.h */,
+				5EDFCD9E8A12E73690EC326F4A639546 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Beethoven";
+			sourceTree = "<group>";
+		};
+		36B6C4397BC37F50A586466E71EBA7D1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A5E2949914210419BEEAE8A8F78FFA1 /* Info.plist */,
+				D83530F5B6979010261E361F06ACA5F7 /* Pitchy.modulemap */,
+				916B9EFACBAB02EDFF991104DFAB9D98 /* Pitchy.xcconfig */,
+				852AD3D95C5D323D6D59A972564F3894 /* Pitchy-dummy.m */,
+				7BA3B6D8AECE295CBE052C4846FCE135 /* Pitchy-prefix.pch */,
+				9AA5C5D708D654B04CE7F6DB5DF0F093 /* Pitchy-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pitchy";
+			sourceTree = "<group>";
+		};
+		63640E48094D101B0B363CC8A8D7E85F /* Beethoven */ = {
+			isa = PBXGroup;
+			children = (
+				35056A15A465E7FBAA6277A8BC92D0C1 /* Array+Extensions.swift */,
+				CAC2CB3AD92D6304437A7ABEC96C5EB5 /* BarycentricEstimator.swift */,
+				B7A51C2DBB70457F1246A84DDCC31BEF /* Buffer.swift */,
+				E6312E968E9AFEDB711A2A3A74F69878 /* Config.swift */,
+				D5C0EB4F4E3B0C7DC19B6F7642574F13 /* EstimationError.swift */,
+				30F44FB4C449B39FF4753F6F96F7ABA0 /* EstimationFactory.swift */,
+				F57F1CC693AA9A6A2454178C56838929 /* EstimationStrategy.swift */,
+				93C9EE1085722E772CC0DDD47BA37E38 /* Estimator.swift */,
+				3CE5062865D2181EBD99D6A3EC3E0E6A /* FFTTransformer.swift */,
+				D1042CD66EF37F18A7980513FB011B84 /* HPSEstimator.swift */,
+				DFF1198072DE45BD64C89FF7CE2193A8 /* InputSignalTracker.swift */,
+				0343EB9C4F11A8AB1D93FCE228EB507E /* JainsEstimator.swift */,
+				7B50BA7703809A422A6CABEB0F6095B0 /* LocationEstimator.swift */,
+				A9F1FBA176980DCF3BDC68FFDEAD92CC /* MaxValueEstimator.swift */,
+				CF0745FCE5AD61677D5A21CFB12C043B /* OutputSignalTracker.swift */,
+				861C4EC0C4BD2EC5A7940E9AC9734BB4 /* PitchEngine.swift */,
+				C6BBF24DF37594A6775E939945B5E297 /* QuadradicEstimator.swift */,
+				A7448B1E64C3E58E939B3BEC9F164A1E /* QuinnsFirstEstimator.swift */,
+				647CF565BEAB95C8248157FF2863DB27 /* QuinnsSecondEstimator.swift */,
+				3E8B581793E1EBE897416925A7955162 /* SignalTracker.swift */,
+				626F8043C8FBABFC63C11E1A91203EE1 /* SimpleTransformer.swift */,
+				D1FDAF5FDFC14AC91EAC9C53DC39A577 /* Transformer.swift */,
+				DCA8AED558025529927C5F6EE3B75958 /* TransformFactory.swift */,
+				D48076E31A7F3C721E2B5464103411DE /* TransformStrategy.swift */,
+				30213C47D4FE0D2B01EE418C3DB83F3A /* Support Files */,
+			);
+			path = Beethoven;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				C03324401CC582CF001CCEF1 /* MyParticle.sks */,
+				C03324411CC582CF001CCEF1 /* spark.png */,
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				89A393472C9E49796F8438793244D3C8 /* Frameworks */,
+				D11539B7FD46B20607EBA41840DB860A /* Pods */,
+				04ED734F45D8D8DE9DF2C9260B426A02 /* Products */,
+				E589CF4245A3716E4F1F444F3B30E37B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		89A393472C9E49796F8438793244D3C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3CE40D3CA713D3372504837FE0FCD22 /* Pitchy.framework */,
+				CFD870E814B058295259C1D483658370 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CF48A921495B696A48C2CB026081686 /* Pods-Sound Color */ = {
+			isa = PBXGroup;
+			children = (
+				A374CF6519AC6EBBCC0B282376B3C197 /* Info.plist */,
+				2247DF63092D3C2D12A6EFA4B8DBBFDE /* Pods-Sound Color.modulemap */,
+				08DD35F671F08C64F756AA27BF5926A8 /* Pods-Sound Color-acknowledgements.markdown */,
+				F6C64F076FF9ABC0A7C1CFA554842A31 /* Pods-Sound Color-acknowledgements.plist */,
+				D8E1B29CCAD43721EE3B376201DCC379 /* Pods-Sound Color-dummy.m */,
+				5C1401923073470A016E6A9264096D79 /* Pods-Sound Color-frameworks.sh */,
+				473692F6B1A6F7920405114D4F9018E3 /* Pods-Sound Color-resources.sh */,
+				DA73D3E472CBA83EF5BD00CFB9074A0E /* Pods-Sound Color-umbrella.h */,
+				2C1BB63BBC6C0EAC17DFE7CA88FB8752 /* Pods-Sound Color.debug.xcconfig */,
+				74FBC53B691E9AF4E451A3383BDA72B3 /* Pods-Sound Color.release.xcconfig */,
+			);
+			name = "Pods-Sound Color";
+			path = "Target Support Files/Pods-Sound Color";
+			sourceTree = "<group>";
+		};
+		CFD870E814B058295259C1D483658370 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BDFA7E10F092007F8F0EFC6DC5FDB94C /* Accelerate.framework */,
+				297367E0A22A797D8C50D41A323AA6B9 /* AVFoundation.framework */,
+				559589A619359C032EBADBA5032FA338 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D11539B7FD46B20607EBA41840DB860A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63640E48094D101B0B363CC8A8D7E85F /* Beethoven */,
+				EA49F4196B0F7F07342F52A0AD709A96 /* Pitchy */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E589CF4245A3716E4F1F444F3B30E37B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CF48A921495B696A48C2CB026081686 /* Pods-Sound Color */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EA49F4196B0F7F07342F52A0AD709A96 /* Pitchy */ = {
+			isa = PBXGroup;
+			children = (
+				A2EA2CA6A787C8E84147A905099BBBF1 /* AcousticWave.swift */,
+				E2538EAB7F13110AFB08DEFEBE9BBDCE /* Config.swift */,
+				EF2E661459D4C36311DD8C6CD2125F9D /* Error.swift */,
+				6DD82A0D4B3677BB6A723ED2169E80A1 /* Note.swift */,
+				C73BB52208198068441920B7021950A6 /* NoteCalculator.swift */,
+				4BE9E46D3E17E6B80F5DB43DD90BDB34 /* Pitch.swift */,
+				1894AAE2A4F1376E9684C3D3CECE0F14 /* PitchCalculator.swift */,
+				B9B21C401991C70F0C6ECB5FA281E412 /* WaveCalculator.swift */,
+				36B6C4397BC37F50A586466E71EBA7D1 /* Support Files */,
+			);
+			path = Pitchy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6BB02F551AD5F255F408F0DD0CD21307 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CD913E68D464F91CF9594ECFE49F771 /* Pitchy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFEA4BC4886B28CE5724F6F442DB02CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6EC2DD2E16B730DDF73C88506952CA /* Beethoven-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCE945FE7F1F98476E021CB27A513E4A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87733F6D52670C38228787EADD29F84F /* Pods-Sound Color-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3F2148881B422F7499162ACACC37D143 /* Beethoven */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52F6BE376842FEF13375FC52668A7AFE /* Build configuration list for PBXNativeTarget "Beethoven" */;
+			buildPhases = (
+				04DEB2725A82A01A1466EFDF8F86F7E2 /* Sources */,
+				015AA290B2E32CABC9657DEC62E3A1C5 /* Frameworks */,
+				EFEA4BC4886B28CE5724F6F442DB02CF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D20AD56E7E59F57691A9BF29187E0403 /* PBXTargetDependency */,
+			);
+			name = Beethoven;
+			productName = Beethoven;
+			productReference = 0377D46E16281914436B68357FC5B9C3 /* Beethoven.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8655DBBE24512B36EE7586BE1408F7DE /* Pods-Sound Color */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A39CE1E6ADD4B6AD06B667B18A44741 /* Build configuration list for PBXNativeTarget "Pods-Sound Color" */;
+			buildPhases = (
+				E300470696D10BAB944DD06614C12A4F /* Sources */,
+				420D3173CAD616472813AC9AFC93EBAB /* Frameworks */,
+				FCE945FE7F1F98476E021CB27A513E4A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7789268D731090316A15DAC698A8F75B /* PBXTargetDependency */,
+				58288C8266B4EB5647BC3D0A06A3A94B /* PBXTargetDependency */,
+			);
+			name = "Pods-Sound Color";
+			productName = "Pods-Sound Color";
+			productReference = AC1A5FB8A8A7AAB376508A50ADC2B48C /* Pods_Sound_Color.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D547ECBAFD0BAC79D81AE36137B80925 /* Pitchy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553FF007902EB31FE63DA914BDDD351B /* Build configuration list for PBXNativeTarget "Pitchy" */;
+			buildPhases = (
+				E571DF773A99D291891018C29C17CFBD /* Sources */,
+				2909C5E6BBA00361A9DC429C42C68E54 /* Frameworks */,
+				6BB02F551AD5F255F408F0DD0CD21307 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pitchy;
+			productName = Pitchy;
+			productReference = A5DFA632FFADA9F77EE8226604F00DF6 /* Pitchy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 04ED734F45D8D8DE9DF2C9260B426A02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F2148881B422F7499162ACACC37D143 /* Beethoven */,
+				D547ECBAFD0BAC79D81AE36137B80925 /* Pitchy */,
+				8655DBBE24512B36EE7586BE1408F7DE /* Pods-Sound Color */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04DEB2725A82A01A1466EFDF8F86F7E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E4FE147AE34E3F2155B66A91E389FDF /* Array+Extensions.swift in Sources */,
+				C2EC4B13DC0F85298B2B85AE871DBD35 /* BarycentricEstimator.swift in Sources */,
+				56BE2E91871CB441CADCB53B2C77B398 /* Beethoven-dummy.m in Sources */,
+				2FC2B94F8965DB44B4F1A2552BC70511 /* Buffer.swift in Sources */,
+				6C0A8E721107BEB86C3F40EE27A86245 /* Config.swift in Sources */,
+				6F90BD17C9A552F3579230348DC130E0 /* EstimationError.swift in Sources */,
+				A02FA725368B9F5067246B16D22B805F /* EstimationFactory.swift in Sources */,
+				70B92815323E77F69937824CA239B6AB /* EstimationStrategy.swift in Sources */,
+				8D410872C0A2200E60497AB8395F59C7 /* Estimator.swift in Sources */,
+				C210855722BA44E4FDE24BAC79A7B44C /* FFTTransformer.swift in Sources */,
+				43573F03D53511D1412B71AFF07AC07A /* HPSEstimator.swift in Sources */,
+				8F2A7C3469E600FFBC6056F79B322EC1 /* InputSignalTracker.swift in Sources */,
+				F62CE5BE0F614AA64FAF792D6DDF282D /* JainsEstimator.swift in Sources */,
+				9D818CC379B5B18946157208A0A499AF /* LocationEstimator.swift in Sources */,
+				FF313B4F21C8A80D417A41F5850D346B /* MaxValueEstimator.swift in Sources */,
+				3F6A29B571A4D5FB8792CBCF4C92BD56 /* OutputSignalTracker.swift in Sources */,
+				A86AADDD78E4FB9A5C003F9DBD66B98E /* PitchEngine.swift in Sources */,
+				6F49484E7A394DBFCA5AF2C6ABFB3D91 /* QuadradicEstimator.swift in Sources */,
+				6378051D71EA27AF7724DC783FAD0702 /* QuinnsFirstEstimator.swift in Sources */,
+				FC9EDC8175C71637AAE282A0B66A6E11 /* QuinnsSecondEstimator.swift in Sources */,
+				63997D8F0F4649CB330965E3AC466DDC /* SignalTracker.swift in Sources */,
+				FE1278517CF18A25FDD8488772A6FDA5 /* SimpleTransformer.swift in Sources */,
+				559DFCBE5D8C7A43125930F08E125094 /* Transformer.swift in Sources */,
+				CDB5976F897591D6C6A8E18747ABB9FC /* TransformFactory.swift in Sources */,
+				3EA3D6FE284197163A75940BB41BB1BC /* TransformStrategy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E300470696D10BAB944DD06614C12A4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0EC0F24E4046AF07A0C7DE26AFA149F /* Pods-Sound Color-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E571DF773A99D291891018C29C17CFBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B2496FC2CAC29495D0A09946EFD16CE /* AcousticWave.swift in Sources */,
+				0D0F309DC3A69EE1B12FC3327839C85C /* Config.swift in Sources */,
+				3BB2534DCF13A506F1BEA2FFB530BA65 /* Error.swift in Sources */,
+				37D7598C4598060384560906F1A0B6C7 /* Note.swift in Sources */,
+				1ACCAD57CE934B6110C14CF4A53F7745 /* NoteCalculator.swift in Sources */,
+				D7498158B940FA0C972641DAAF82471E /* Pitch.swift in Sources */,
+				197E8602976643CB9329010568986AFC /* PitchCalculator.swift in Sources */,
+				3E2E09E45D3E8C651AE4C6F6B4418D16 /* Pitchy-dummy.m in Sources */,
+				4534DB58B44B2A5B0A877395EECDE26A /* WaveCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58288C8266B4EB5647BC3D0A06A3A94B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pitchy;
+			target = D547ECBAFD0BAC79D81AE36137B80925 /* Pitchy */;
+			targetProxy = 639A3800AA2DC3A9C6313B78755B6274 /* PBXContainerItemProxy */;
+		};
+		7789268D731090316A15DAC698A8F75B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Beethoven;
+			target = 3F2148881B422F7499162ACACC37D143 /* Beethoven */;
+			targetProxy = C897DF20285FF2743B46EB5DF5600A9A /* PBXContainerItemProxy */;
+		};
+		D20AD56E7E59F57691A9BF29187E0403 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pitchy;
+			target = D547ECBAFD0BAC79D81AE36137B80925 /* Pitchy */;
+			targetProxy = 6017C46D344F982C1CE0038EB73CA894 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		079C97BA55A7C549A0E9111B2C11D5E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62CF44113C095B726281F88C306614D5 /* Beethoven.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Beethoven/Beethoven-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Beethoven/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Beethoven/Beethoven.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Beethoven;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0AF9EF7F48CED84FE55AD7CE9CFC6CA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916B9EFACBAB02EDFF991104DFAB9D98 /* Pitchy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pitchy/Pitchy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pitchy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pitchy/Pitchy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Pitchy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		32BDCE2B8368DED8C13F82CB74015A13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74FBC53B691E9AF4E451A3383BDA72B3 /* Pods-Sound Color.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Sound Color/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sound Color/Pods-Sound Color.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Sound_Color;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BCFF95DB286D0BEF118592356CEF831C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916B9EFACBAB02EDFF991104DFAB9D98 /* Pitchy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pitchy/Pitchy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pitchy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pitchy/Pitchy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Pitchy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE3469D4B4A3348C38E5C3836D71B693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62CF44113C095B726281F88C306614D5 /* Beethoven.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Beethoven/Beethoven-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Beethoven/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Beethoven/Beethoven.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Beethoven;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D01B785A0415794454390DA0340B91C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C1BB63BBC6C0EAC17DFE7CA88FB8752 /* Pods-Sound Color.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Sound Color/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sound Color/Pods-Sound Color.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Sound_Color;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52F6BE376842FEF13375FC52668A7AFE /* Build configuration list for PBXNativeTarget "Beethoven" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079C97BA55A7C549A0E9111B2C11D5E2 /* Debug */,
+				BE3469D4B4A3348C38E5C3836D71B693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553FF007902EB31FE63DA914BDDD351B /* Build configuration list for PBXNativeTarget "Pitchy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCFF95DB286D0BEF118592356CEF831C /* Debug */,
+				0AF9EF7F48CED84FE55AD7CE9CFC6CA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A39CE1E6ADD4B6AD06B667B18A44741 /* Build configuration list for PBXNativeTarget "Pods-Sound Color" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D01B785A0415794454390DA0340B91C9 /* Debug */,
+				32BDCE2B8368DED8C13F82CB74015A13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
