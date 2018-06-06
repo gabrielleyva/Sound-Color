@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		680639A2003F19E74A2D2BFE /* Pods_SoundColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C61EB8CE3408DCB405D95E5 /* Pods_SoundColor.framework */; };
+		AB1C97B34529301EDAECEF43 /* Pods_SoundColorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D131B3A4EC776D2EFAA43773 /* Pods_SoundColorUITests.framework */; };
+		C0B97CEE20C86F3A0027715B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B97CED20C86F3A0027715B /* AppDelegate.swift */; };
+		C0B97CF020C86F3A0027715B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B97CEF20C86F3A0027715B /* ViewController.swift */; };
+		C0B97CF320C86F3A0027715B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0B97CF120C86F3A0027715B /* Main.storyboard */; };
+		C0B97CF520C86F3C0027715B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0B97CF420C86F3C0027715B /* Assets.xcassets */; };
+		C0B97CF820C86F3C0027715B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0B97CF620C86F3C0027715B /* LaunchScreen.storyboard */; };
+		C0B97D0320C86F3C0027715B /* SoundColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B97D0220C86F3C0027715B /* SoundColorTests.swift */; };
+		C0B97D0E20C86F3C0027715B /* SoundColorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B97D0D20C86F3C0027715B /* SoundColorUITests.swift */; };
+		C0B97D2020C875F30027715B /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = C0B97D1F20C875F30027715B /* MyParticle.sks */; };
+		C0B97D2220C879A20027715B /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B97D2120C879A20027715B /* CoreAudioKit.framework */; };
+		F667D6CC2D0CF787B5CB979D /* Pods_SoundColorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408AA49F9478F0D795758A80 /* Pods_SoundColorTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0B97CFF20C86F3C0027715B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0B97CE220C86F3A0027715B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0B97CE920C86F3A0027715B;
+			remoteInfo = SoundColor;
+		};
+		C0B97D0A20C86F3C0027715B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0B97CE220C86F3A0027715B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0B97CE920C86F3A0027715B;
+			remoteInfo = SoundColor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		199274499C046FCCEA2A2A02 /* Pods-SoundColorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundColorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundColorUITests/Pods-SoundColorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1C61EB8CE3408DCB405D95E5 /* Pods_SoundColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		408AA49F9478F0D795758A80 /* Pods_SoundColorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundColorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E2E3EFF8F1FCDBC9A005EB /* Pods-SoundColor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundColor.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundColor/Pods-SoundColor.release.xcconfig"; sourceTree = "<group>"; };
+		63492D5D56203690C72203B9 /* Pods-SoundColorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundColorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundColorTests/Pods-SoundColorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		671421FB7882ADE3E6FAD893 /* Pods-SoundColorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundColorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundColorUITests/Pods-SoundColorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0B97CEA20C86F3A0027715B /* SoundColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0B97CED20C86F3A0027715B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0B97CEF20C86F3A0027715B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0B97CF220C86F3A0027715B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0B97CF420C86F3C0027715B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0B97CF720C86F3C0027715B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0B97CF920C86F3C0027715B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0B97CFE20C86F3C0027715B /* SoundColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0B97D0220C86F3C0027715B /* SoundColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundColorTests.swift; sourceTree = "<group>"; };
+		C0B97D0420C86F3C0027715B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0B97D0920C86F3C0027715B /* SoundColorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundColorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0B97D0D20C86F3C0027715B /* SoundColorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundColorUITests.swift; sourceTree = "<group>"; };
+		C0B97D0F20C86F3C0027715B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0B97D1F20C875F30027715B /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		C0B97D2120C879A20027715B /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		C0B97D2320C879FC0027715B /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		CDC08B1088955A1E026BDEED /* Pods-SoundColor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundColor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundColor/Pods-SoundColor.debug.xcconfig"; sourceTree = "<group>"; };
+		D131B3A4EC776D2EFAA43773 /* Pods_SoundColorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundColorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E79663A82AD07F935F2F794E /* Pods-SoundColorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundColorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundColorTests/Pods-SoundColorTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0B97CE720C86F3A0027715B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B97D2220C879A20027715B /* CoreAudioKit.framework in Frameworks */,
+				680639A2003F19E74A2D2BFE /* Pods_SoundColor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0B97CFB20C86F3C0027715B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F667D6CC2D0CF787B5CB979D /* Pods_SoundColorTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0B97D0620C86F3C0027715B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1C97B34529301EDAECEF43 /* Pods_SoundColorUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FA8D5A62171866A2DC0362E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDC08B1088955A1E026BDEED /* Pods-SoundColor.debug.xcconfig */,
+				46E2E3EFF8F1FCDBC9A005EB /* Pods-SoundColor.release.xcconfig */,
+				63492D5D56203690C72203B9 /* Pods-SoundColorTests.debug.xcconfig */,
+				E79663A82AD07F935F2F794E /* Pods-SoundColorTests.release.xcconfig */,
+				671421FB7882ADE3E6FAD893 /* Pods-SoundColorUITests.debug.xcconfig */,
+				199274499C046FCCEA2A2A02 /* Pods-SoundColorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7F866E3B23FEC737EAE1C54C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0B97D2120C879A20027715B /* CoreAudioKit.framework */,
+				1C61EB8CE3408DCB405D95E5 /* Pods_SoundColor.framework */,
+				408AA49F9478F0D795758A80 /* Pods_SoundColorTests.framework */,
+				D131B3A4EC776D2EFAA43773 /* Pods_SoundColorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0B97CE120C86F3A0027715B = {
+			isa = PBXGroup;
+			children = (
+				C0B97D2320C879FC0027715B /* CoreAudioKit.framework */,
+				C0B97CEC20C86F3A0027715B /* SoundColor */,
+				C0B97D0120C86F3C0027715B /* SoundColorTests */,
+				C0B97D0C20C86F3C0027715B /* SoundColorUITests */,
+				C0B97CEB20C86F3A0027715B /* Products */,
+				4FA8D5A62171866A2DC0362E /* Pods */,
+				7F866E3B23FEC737EAE1C54C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C0B97CEB20C86F3A0027715B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0B97CEA20C86F3A0027715B /* SoundColor.app */,
+				C0B97CFE20C86F3C0027715B /* SoundColorTests.xctest */,
+				C0B97D0920C86F3C0027715B /* SoundColorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0B97CEC20C86F3A0027715B /* SoundColor */ = {
+			isa = PBXGroup;
+			children = (
+				C0B97CED20C86F3A0027715B /* AppDelegate.swift */,
+				C0B97CEF20C86F3A0027715B /* ViewController.swift */,
+				C0B97CF120C86F3A0027715B /* Main.storyboard */,
+				C0B97CF420C86F3C0027715B /* Assets.xcassets */,
+				C0B97CF620C86F3C0027715B /* LaunchScreen.storyboard */,
+				C0B97CF920C86F3C0027715B /* Info.plist */,
+				C0B97D1F20C875F30027715B /* MyParticle.sks */,
+			);
+			path = SoundColor;
+			sourceTree = "<group>";
+		};
+		C0B97D0120C86F3C0027715B /* SoundColorTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0B97D0220C86F3C0027715B /* SoundColorTests.swift */,
+				C0B97D0420C86F3C0027715B /* Info.plist */,
+			);
+			path = SoundColorTests;
+			sourceTree = "<group>";
+		};
+		C0B97D0C20C86F3C0027715B /* SoundColorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0B97D0D20C86F3C0027715B /* SoundColorUITests.swift */,
+				C0B97D0F20C86F3C0027715B /* Info.plist */,
+			);
+			path = SoundColorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0B97CE920C86F3A0027715B /* SoundColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0B97D1220C86F3C0027715B /* Build configuration list for PBXNativeTarget "SoundColor" */;
+			buildPhases = (
+				23DB4CDADF3D913B4321404A /* [CP] Check Pods Manifest.lock */,
+				C0B97CE620C86F3A0027715B /* Sources */,
+				C0B97CE720C86F3A0027715B /* Frameworks */,
+				C0B97CE820C86F3A0027715B /* Resources */,
+				E406DFCE734861017C42EFCB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundColor;
+			productName = SoundColor;
+			productReference = C0B97CEA20C86F3A0027715B /* SoundColor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0B97CFD20C86F3C0027715B /* SoundColorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0B97D1520C86F3C0027715B /* Build configuration list for PBXNativeTarget "SoundColorTests" */;
+			buildPhases = (
+				C5AD831901BF41EAB724BE23 /* [CP] Check Pods Manifest.lock */,
+				C0B97CFA20C86F3C0027715B /* Sources */,
+				C0B97CFB20C86F3C0027715B /* Frameworks */,
+				C0B97CFC20C86F3C0027715B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0B97D0020C86F3C0027715B /* PBXTargetDependency */,
+			);
+			name = SoundColorTests;
+			productName = SoundColorTests;
+			productReference = C0B97CFE20C86F3C0027715B /* SoundColorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0B97D0820C86F3C0027715B /* SoundColorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0B97D1820C86F3C0027715B /* Build configuration list for PBXNativeTarget "SoundColorUITests" */;
+			buildPhases = (
+				B3E0C8F410EA32B52124B7F2 /* [CP] Check Pods Manifest.lock */,
+				C0B97D0520C86F3C0027715B /* Sources */,
+				C0B97D0620C86F3C0027715B /* Frameworks */,
+				C0B97D0720C86F3C0027715B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0B97D0B20C86F3C0027715B /* PBXTargetDependency */,
+			);
+			name = SoundColorUITests;
+			productName = SoundColorUITests;
+			productReference = C0B97D0920C86F3C0027715B /* SoundColorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0B97CE220C86F3A0027715B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Gabriel Leyva Merino";
+				TargetAttributes = {
+					C0B97CE920C86F3A0027715B = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					C0B97CFD20C86F3C0027715B = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = C0B97CE920C86F3A0027715B;
+					};
+					C0B97D0820C86F3C0027715B = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = C0B97CE920C86F3A0027715B;
+					};
+				};
+			};
+			buildConfigurationList = C0B97CE520C86F3A0027715B /* Build configuration list for PBXProject "SoundColor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0B97CE120C86F3A0027715B;
+			productRefGroup = C0B97CEB20C86F3A0027715B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0B97CE920C86F3A0027715B /* SoundColor */,
+				C0B97CFD20C86F3C0027715B /* SoundColorTests */,
+				C0B97D0820C86F3C0027715B /* SoundColorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0B97CE820C86F3A0027715B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B97CF820C86F3C0027715B /* LaunchScreen.storyboard in Resources */,
+				C0B97CF520C86F3C0027715B /* Assets.xcassets in Resources */,
+				C0B97CF320C86F3A0027715B /* Main.storyboard in Resources */,
+				C0B97D2020C875F30027715B /* MyParticle.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0B97CFC20C86F3C0027715B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0B97D0720C86F3C0027715B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23DB4CDADF3D913B4321404A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoundColor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3E0C8F410EA32B52124B7F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoundColorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5AD831901BF41EAB724BE23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoundColorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E406DFCE734861017C42EFCB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SoundColor/Pods-SoundColor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Beethoven/Beethoven.framework",
+				"${BUILT_PRODUCTS_DIR}/Pitchy/Pitchy.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Beethoven.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pitchy.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoundColor/Pods-SoundColor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0B97CE620C86F3A0027715B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B97CF020C86F3A0027715B /* ViewController.swift in Sources */,
+				C0B97CEE20C86F3A0027715B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0B97CFA20C86F3C0027715B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B97D0320C86F3C0027715B /* SoundColorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0B97D0520C86F3C0027715B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0B97D0E20C86F3C0027715B /* SoundColorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0B97D0020C86F3C0027715B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0B97CE920C86F3A0027715B /* SoundColor */;
+			targetProxy = C0B97CFF20C86F3C0027715B /* PBXContainerItemProxy */;
+		};
+		C0B97D0B20C86F3C0027715B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0B97CE920C86F3A0027715B /* SoundColor */;
+			targetProxy = C0B97D0A20C86F3C0027715B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0B97CF120C86F3A0027715B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0B97CF220C86F3A0027715B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0B97CF620C86F3C0027715B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0B97CF720C86F3C0027715B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0B97D1020C86F3C0027715B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0B97D1120C86F3C0027715B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0B97D1320C86F3C0027715B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDC08B1088955A1E026BDEED /* Pods-SoundColor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4Q24DN7SQ;
+				INFOPLIST_FILE = SoundColor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leyvamerino.SoundColor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0B97D1420C86F3C0027715B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46E2E3EFF8F1FCDBC9A005EB /* Pods-SoundColor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4Q24DN7SQ;
+				INFOPLIST_FILE = SoundColor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leyvamerino.SoundColor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C0B97D1620C86F3C0027715B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63492D5D56203690C72203B9 /* Pods-SoundColorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4Q24DN7SQ;
+				INFOPLIST_FILE = SoundColorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leyvamerino.SoundColorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundColor.app/SoundColor";
+			};
+			name = Debug;
+		};
+		C0B97D1720C86F3C0027715B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E79663A82AD07F935F2F794E /* Pods-SoundColorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4Q24DN7SQ;
+				INFOPLIST_FILE = SoundColorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leyvamerino.SoundColorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundColor.app/SoundColor";
+			};
+			name = Release;
+		};
+		C0B97D1920C86F3C0027715B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 671421FB7882ADE3E6FAD893 /* Pods-SoundColorUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4Q24DN7SQ;
+				INFOPLIST_FILE = SoundColorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leyvamerino.SoundColorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoundColor;
+			};
+			name = Debug;
+		};
+		C0B97D1A20C86F3C0027715B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 199274499C046FCCEA2A2A02 /* Pods-SoundColorUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4Q24DN7SQ;
+				INFOPLIST_FILE = SoundColorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.leyvamerino.SoundColorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SoundColor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0B97CE520C86F3A0027715B /* Build configuration list for PBXProject "SoundColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0B97D1020C86F3C0027715B /* Debug */,
+				C0B97D1120C86F3C0027715B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0B97D1220C86F3C0027715B /* Build configuration list for PBXNativeTarget "SoundColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0B97D1320C86F3C0027715B /* Debug */,
+				C0B97D1420C86F3C0027715B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0B97D1520C86F3C0027715B /* Build configuration list for PBXNativeTarget "SoundColorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0B97D1620C86F3C0027715B /* Debug */,
+				C0B97D1720C86F3C0027715B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0B97D1820C86F3C0027715B /* Build configuration list for PBXNativeTarget "SoundColorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0B97D1920C86F3C0027715B /* Debug */,
+				C0B97D1A20C86F3C0027715B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0B97CE220C86F3A0027715B /* Project object */;
+}
